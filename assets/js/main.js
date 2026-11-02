@@ -59,4 +59,25 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     revealEls.forEach(function (el) { el.classList.add("visible"); });
   }
+
+  var parallaxImg = document.querySelector(".cta-band .cta-image img");
+  if (parallaxImg) {
+    var ticking = false;
+    var updateParallax = function () {
+      var rect = parallaxImg.parentElement.getBoundingClientRect();
+      var vh = window.innerHeight;
+      var progress = (vh - rect.top) / (vh + rect.height);
+      progress = Math.max(0, Math.min(1, progress));
+      var shift = (progress - 0.5) * 60;
+      parallaxImg.style.transform = "translateY(" + shift + "px)";
+      ticking = false;
+    };
+    window.addEventListener("scroll", function () {
+      if (!ticking) {
+        window.requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    }, { passive: true });
+    updateParallax();
+  }
 });

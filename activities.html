@@ -13,14 +13,17 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="logo">Arty</a>
+    <a href="index.html"><img class="logo-img" src="assets/img/logo-purple.gif" alt="Arty" /></a>
     <nav class="desktop-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="activities.html">Activities</a>
-      <a href="workshops.html">Workshops</a>
-      <a href="blog.html">Blog</a>
-      <a href="workshops.html" class="btn">Workshop Booking</a>
+      <div class="desktop-nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="activities.html" class="active">Activities ›</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <a href="#" class="lang-toggle-desktop">English ›</a>
+      <a href="workshops.html" class="btn btn-solid">Workshop Booking</a>
     </nav>
     <button class="menu-toggle" aria-label="Open menu">
       <span class="bars"><span></span><span></span><span></span></span>
@@ -31,7 +34,7 @@
 
 <div class="nav-overlay">
   <div class="nav-overlay-top container">
-    <a href="index.html" class="logo">Arty</a>
+    <img class="logo-img" src="assets/img/logo-purple.gif" alt="Arty" />
     <button class="nav-close" aria-label="Close menu">&times;</button>
   </div>
   <nav class="nav-links container">
@@ -91,13 +94,33 @@
 </section>
 
 <footer class="site-footer">
-  <a href="index.html" class="logo">Arty</a>
-  <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="activities.html">Activities</a>
-    <a href="workshops.html">Workshops</a>
-    <a href="blog.html">Blog</a>
+  <div class="footer-grid container">
+    <div class="footer-about">
+      <img class="logo-img" src="assets/img/logo-purple.gif" alt="Arty" />
+      <p class="by-line">ABOUT ARTY BY <a href="about.html">HEBA MERI</a></p>
+      <p>&ldquo;We are an interactive art space offering hands-on workshops in pottery, painting, and other crafts, all within a warm and welcoming environment that blends learning, fun, and self-expression&rdquo;</p>
+    </div>
+    <div class="footer-col">
+      <h4>Links</h4>
+      <a href="about.html">About</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="activities.html">Activities</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="#" class="footer-social" aria-label="Instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+    </div>
+    <div class="footer-newsletter">
+      <h4>Join Our Newsletter!</h4>
+      <p>Stay up to date on our new releases and sales. We strive to not overload your inbox. You will only receive sporadic messages when we have a deal you might be interested in. Opt out at any time!</p>
+      <form class="subscribe-form" style="display:block;max-width:none;margin:0;">
+        <input type="email" placeholder="Email Address" required />
+        <button type="submit" class="btn btn-solid">Sign Up</button>
+      </form>
+    </div>
   </div>
   <p class="footer-note">&copy; 2026 Arty Studio. All rights reserved.</p>
 </footer>

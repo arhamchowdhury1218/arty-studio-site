@@ -14,14 +14,17 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="logo">Arty</a>
+    <a href="index.html"><img class="logo-img" src="assets/img/logo-purple.gif" alt="Arty" /></a>
     <nav class="desktop-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="activities.html">Activities</a>
-      <a href="workshops.html">Workshops</a>
-      <a href="blog.html">Blog</a>
-      <a href="workshops.html" class="btn">Workshop Booking</a>
+      <div class="desktop-nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="activities.html">Activities ›</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <a href="#" class="lang-toggle-desktop">English ›</a>
+      <a href="workshops.html" class="btn btn-solid">Workshop Booking</a>
     </nav>
     <button class="menu-toggle" aria-label="Open menu">
       <span class="bars"><span></span><span></span><span></span></span>
@@ -32,7 +35,7 @@
 
 <div class="nav-overlay">
   <div class="nav-overlay-top container">
-    <a href="index.html" class="logo">Arty</a>
+    <img class="logo-img" src="assets/img/logo-purple.gif" alt="Arty" />
     <button class="nav-close" aria-label="Close menu">&times;</button>
   </div>
   <nav class="nav-links container">
@@ -49,55 +52,62 @@
 </div>
 
 <section class="hero">
-  <img class="hero-bg" src="assets/img/home-artycoffe.jpg" alt="Hands shaping clay on a pottery wheel" />
-  <div class="hero-content">
-    <h1>Arty</h1>
-    <p>A creative destination for art, expression &amp; inspiration — pottery, painting and crafts for every age.</p>
-  </div>
+  <video class="hero-bg" autoplay loop muted playsinline poster="assets/img/home-hero-poster.jpg">
+    <source src="assets/img/home-hero-video.mp4" type="video/mp4" />
+  </video>
 </section>
 
 <section class="about-section">
   <div class="container">
+    <div class="img-stack reveal">
+      <img src="assets/img/home-artycoffe.jpg" alt="Arty studio interior" />
+    </div>
     <div class="reveal">
       <h2>About Arty</h2>
-      <p class="lead">An interactive art space offering hands-on workshops in pottery, painting, and crafts within a warm, welcoming environment that blends learning, fun, and self-expression.</p>
-      <p class="lead">Celebrating cultural heritage through modern creativity, Arty gives visitors the chance to create unique pieces and reconnect with the beauty of handmade art.</p>
-      <p class="lead">Offering experiences for all ages, exploring art with our audience, as a tool for healing, connection &amp; self-discovery.</p>
-      <p class="lead"><em>Are you an artist, a beginner, or simply seeking a peaceful &amp; joyful moment? This is the place &amp; community you belong to.</em></p>
-      <a href="about.html" class="btn">Know More</a>
-    </div>
-    <div class="img-stack reveal">
-      <img src="assets/img/home-mg9901.jpg" alt="Arty studio painting in progress" />
+      <p class="lead"><span class="link-underline">An interactive art space</span> offering hands-on <span class="link-underline">workshops</span> in <span class="link-underline">pottery, painting,</span> and <span class="link-underline">crafts</span> within a warm, welcoming environment that blends learning, fun, and self-expression.</p>
+      <p class="lead">Celebrating <span class="link-underline">cultural-heritage</span> through modern creativity, Arty gives visitors the chance to create unique pieces and <span class="link-underline">reconnect with the beauty of handmade art.</span></p>
+      <p class="lead">Offering experiences for all ages, exploring Art with our audience, as a tool for healing, connection &amp; self-discovery.</p>
+      <p class="lead">Are you an artist, a beginner, simple seeking a peaceful &amp; joyful moment?</p>
+      <p class="lead"><span class="link-underline">This is the place &amp; community you belong to</span></p>
+      <a href="about.html" class="btn btn-solid">Know More</a>
     </div>
   </div>
 </section>
 
 <section class="services-section">
   <div class="container reveal">
-    <h3>Services</h3>
-    <div class="accordion-item">
-      <button>Open Studio Access <span class="plus">+</span></button>
-      <div class="accordion-panel"><p>Drop in anytime and use our fully-equipped studio space for your own creative projects.</p></div>
+    <div>
+      <h3>Services</h3>
+      <div class="accordion-item">
+        <button>Open Studio Access <span class="plus">+</span></button>
+        <div class="accordion-panel"><p>Drop in anytime and use our fully-equipped studio space for your own creative projects.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button>Painting &amp; Coloring <span class="plus">+</span></button>
+        <div class="accordion-panel"><p>Guided and free-form painting sessions for all skill levels, in a relaxed studio setting.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button>Clay &amp; Pottery <span class="plus">+</span></button>
+        <div class="accordion-panel"><p>Hand-building and wheel-throwing sessions to shape your own pottery pieces.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button>Workshops <span class="plus">+</span></button>
+        <div class="accordion-panel"><p>Structured multi-day workshops covering pottery, painting and print making.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button>Activities <span class="plus">+</span></button>
+        <div class="accordion-panel"><p>Group activities for kids and adults — birthdays, field trips and team events.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button>Custom Art &amp; Pottery Orders <span class="plus">+</span></button>
+        <div class="accordion-panel"><p>Commission a custom piece made just for you, from concept to finished work.</p></div>
+      </div>
     </div>
-    <div class="accordion-item">
-      <button>Painting &amp; Coloring <span class="plus">+</span></button>
-      <div class="accordion-panel"><p>Guided and free-form painting sessions for all skill levels, in a relaxed studio setting.</p></div>
-    </div>
-    <div class="accordion-item">
-      <button>Clay &amp; Pottery <span class="plus">+</span></button>
-      <div class="accordion-panel"><p>Hand-building and wheel-throwing sessions to shape your own pottery pieces.</p></div>
-    </div>
-    <div class="accordion-item">
-      <button>Workshops <span class="plus">+</span></button>
-      <div class="accordion-panel"><p>Structured multi-day workshops covering pottery, painting and print making.</p></div>
-    </div>
-    <div class="accordion-item">
-      <button>Activities <span class="plus">+</span></button>
-      <div class="accordion-panel"><p>Group activities for kids and adults — birthdays, field trips and team events.</p></div>
-    </div>
-    <div class="accordion-item">
-      <button>Custom Art &amp; Pottery Orders <span class="plus">+</span></button>
-      <div class="accordion-panel"><p>Commission a custom piece made just for you, from concept to finished work.</p></div>
+    <div class="services-collage">
+      <img src="assets/img/home-mg9901.jpg" alt="Painting a mug" />
+      <img src="assets/img/home-mg9991.png" alt="Balloons and pottery" />
+      <img src="assets/img/home-br911-46.jpg" alt="Clay vases" />
+      <img src="assets/img/home-screenshot.png" alt="Studio moment" />
     </div>
   </div>
 </section>
@@ -109,9 +119,21 @@
   </div>
 </div>
 
-<section class="quote-section reveal">
-  <blockquote>&ldquo;Art Is Not A Thing; It Is A Way.&rdquo;</blockquote>
-  <cite>— Elbert Hubbard</cite>
+<section class="gallery-section reveal">
+  <div class="gallery-grid">
+    <img src="assets/img/gallery-mg8672.jpg" alt="Pottery wheel" />
+    <img src="assets/img/gallery-wa0026.jpg" alt="Shaping pottery" />
+    <img src="assets/img/gallery-br911-38.jpg" alt="Kids painting" />
+    <img src="assets/img/gallery-unsplash1.jpg" alt="Painting portrait" />
+    <div class="quote-block">
+      <blockquote>&ldquo;Art Is Not A Thing; It Is A Way.&rdquo;</blockquote>
+      <cite>— Elbert Hubbard</cite>
+    </div>
+    <img src="assets/img/gallery-mg9564.jpg" alt="Pottery wheel close up" />
+    <img src="assets/img/gallery-unsplash2.jpg" alt="Portrait painting detail" />
+    <img src="assets/img/gallery-br911-9.jpg" alt="Studio moment" />
+    <img src="assets/img/gallery-br911-33.jpg" alt="Abstract painting" />
+  </div>
 </section>
 
 <section class="cta-band reveal">
@@ -119,18 +141,38 @@
   <p>Guided sessions designed to help you learn new techniques and deepen your practice.</p>
   <div class="cta-image">
     <img src="assets/img/home-mg9991.png" alt="Pottery pieces on studio shelves" />
+    <a href="workshops.html" class="btn">Book Now</a>
   </div>
-  <a href="workshops.html" class="btn btn-solid">Book Now</a>
 </section>
 
 <footer class="site-footer">
-  <a href="index.html" class="logo">Arty</a>
-  <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="activities.html">Activities</a>
-    <a href="workshops.html">Workshops</a>
-    <a href="blog.html">Blog</a>
+  <div class="footer-grid container">
+    <div class="footer-about">
+      <img class="logo-img" src="assets/img/logo-purple.gif" alt="Arty" />
+      <p class="by-line">ABOUT ARTY BY <a href="about.html">HEBA MERI</a></p>
+      <p>&ldquo;We are an interactive art space offering hands-on workshops in pottery, painting, and other crafts, all within a warm and welcoming environment that blends learning, fun, and self-expression&rdquo;</p>
+    </div>
+    <div class="footer-col">
+      <h4>Links</h4>
+      <a href="about.html">About</a>
+      <a href="workshops.html">Workshops</a>
+      <a href="activities.html">Activities</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="#" class="footer-social" aria-label="Instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+      </a>
+    </div>
+    <div class="footer-newsletter">
+      <h4>Join Our Newsletter!</h4>
+      <p>Stay up to date on our new releases and sales. We strive to not overload your inbox. You will only receive sporadic messages when we have a deal you might be interested in. Opt out at any time!</p>
+      <form class="subscribe-form" style="display:block;max-width:none;margin:0;">
+        <input type="email" placeholder="Email Address" required />
+        <button type="submit" class="btn btn-solid">Sign Up</button>
+      </form>
+    </div>
   </div>
   <p class="footer-note">&copy; 2026 Arty Studio. All rights reserved.</p>
 </footer>

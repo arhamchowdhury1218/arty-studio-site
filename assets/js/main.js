@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  var revealEls = document.querySelectorAll(".reveal");
+  var revealEls = document.querySelectorAll(".reveal, .reveal-scale");
   if ("IntersectionObserver" in window && revealEls.length) {
     var io = new IntersectionObserver(
       function (entries) {

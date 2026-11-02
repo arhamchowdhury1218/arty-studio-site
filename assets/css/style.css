@@ -376,11 +376,16 @@ p { margin: 0 0 1em; }
 .gallery-grid img:nth-of-type(8) { left: 74.3%; top: 30.3%; width: 15.3%; height: 16.1%; transform: rotate(-3deg); }
 .gallery-grid img:nth-of-type(9) { left: 20.5%; top: 41.9%; width: 15.3%; height: 14.2%; transform: rotate(2deg); }
 
+.gallery-grid .quote-spacer {
+  position: relative;
+  top: 22%;
+  height: 75%;
+  z-index: 3;
+}
 .gallery-grid .quote-block {
   position: sticky;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 3;
   text-align: center;
   color: var(--color-bg);
   padding: 20px 10px;
